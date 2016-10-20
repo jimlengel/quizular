@@ -1,1 +1,15 @@
 <h1>Create a new user</h1>
+
+<%= form_for :user, url: users_path do |f| %>
+	<p> 
+		<%= f.label :first_name %><br>
+		<%= f.text_field :first_name %>
+	</p>
+
+<!-- Form needs to be completed with other necessary fields-->
+	<p>
+		<%= f.submit %>
+	</p>
+	<% end %>
+
+
