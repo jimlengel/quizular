@@ -11,6 +11,10 @@ class GamesController < ApplicationController
     @game = Game.new
   end
 
+  def edit
+    @game = Game.find(params[:id])
+  end
+
   def create
     @game = Game.new(game_params)
    
@@ -18,6 +22,17 @@ class GamesController < ApplicationController
       redirect_to @game
     else
       render 'new'
+    end
+  end
+
+
+  def update
+    @game = Game.find(params[:id])
+   
+    if @game.update(game_params)
+      redirect_to @game
+    else
+      render 'edit'
     end
   end
 
