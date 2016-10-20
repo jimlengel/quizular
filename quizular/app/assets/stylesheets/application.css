@@ -21,6 +21,11 @@ body {
   font-size: 10px;
 }
 
+.form {
+  margin: auto;
+  width: 50%
+}
+
 .header {
   position: absolute;
   top: 0;
