@@ -1,3 +1,11 @@
+<div class="game-header">
+  <div class="game-title">Game</div>
+    <div class="game-links">
+    <%= link_to 'Edit', edit_game_path(@game) %> &bull; 
+    <%= link_to 'Back', games_path %>
+    </div>
+</div>
+
 <div class="form">
   <p>
     <strong>Title:</strong>
@@ -57,6 +65,5 @@
     Q <%= @game.question90 %><br>
     A <%= @game.answer90 %>
   </p>
-  <%= link_to 'Edit', edit_game_path(@game) %> <br>
-  <%= link_to 'Back', games_path %>
 </div>
+

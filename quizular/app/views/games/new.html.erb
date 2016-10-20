@@ -1,9 +1,13 @@
-<div class="form">
-  <h1>New Game</h1>
-
-
-<%= render 'form' %>
-
-<%= link_to 'Back', games_path %>
-<br><br>
+<div class="game-header">
+  <div class="game-title">New Game</div>
+    <div class="game-links">
+    <%= link_to 'Back', games_path %>
+    </div>
 </div>
+
+
+<div class="form">
+  <%= render 'form' %>
+</div>
+
+<br><br>
