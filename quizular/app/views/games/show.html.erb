@@ -1,12 +1,69 @@
-<p>
-  <strong>Title:</strong>
-  <%= @game.title %>
-</p>
- 
-<p>
-  <strong>Question10:</strong>
-  <%= @game.question10 %>
-</p>
+<div class="game-header">
+  <div class="game-title">Game</div>
+    <div class="game-links">
+    <%= link_to 'Edit', edit_game_path(@game) %> &bull; 
+    <%= link_to 'Back', games_path %>
+    </div>
+</div>
 
-<%= link_to 'Edit', edit_game_path(@game) %> <br>
-<%= link_to 'Back', games_path %>
+<div class="form">
+  <p>
+    <strong>Title:</strong>
+    <%= @game.title %>
+  </p>
+   
+  <p>
+    <strong>Question 10</strong><br>
+    Q <%= @game.question10 %><br>
+    A <%= @game.answer10 %>
+  </p>
+
+  <p>
+    <strong>Question 20</strong><br>
+    Q <%= @game.question20 %><br>
+    A <%= @game.answer20 %>
+  </p>
+
+  <p>
+    <strong>Question 30</strong><br>
+    Q <%= @game.question30 %><br>
+    A <%= @game.answer30 %>
+  </p>
+
+  <p>
+    <strong>Question 40</strong><br>
+    Q <%= @game.question40 %><br>
+    A <%= @game.answer40 %>
+  </p>
+
+  <p>
+    <strong>Question 50</strong><br>
+    Q <%= @game.question50 %><br>
+    A <%= @game.answer60 %>
+  </p>
+
+  <p>
+    <strong>Question 60</strong><br>
+    Q <%= @game.question60 %><br>
+    A <%= @game.answer60 %>
+  </p>
+
+  <p>
+    <strong>Question 70</strong><br>
+    Q <%= @game.question70 %><br>
+    A <%= @game.answer70 %>
+  </p>
+
+  <p>
+    <strong>Question 80</strong><br>
+    Q <%= @game.question80 %><br>
+    A <%= @game.answer80 %>
+  </p>
+
+  <p>
+    <strong>Question 90</strong><br>
+    Q <%= @game.question90 %><br>
+    A <%= @game.answer90 %>
+  </p>
+</div>
+

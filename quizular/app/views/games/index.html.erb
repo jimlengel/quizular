@@ -1,12 +1,33 @@
-<% @games.each do |game| %>
-  <%= game.title %> 
-  <%= link_to 'Show', game_path(game) %> 
-  <%= link_to 'Edit', edit_game_path(game) %> 
-  <%= link_to 'Destroy', game_path(game),
-              method: :delete,
-              data: { confirm: 'Are you sure?' } %>
-  <br>
-<% end %>
+<div class="game-header">
+  <div class="game-title">Games</div>
+    <div class="game-links">
+    <%= link_to 'New Game', new_game_path %>
+    </div>
+</div>
 
-<%= link_to 'Games', controller: 'games' %>
-<%= link_to 'New Game', new_game_path %>
+
+<div class="form">
+
+  <table class="game-table">
+  <tr>
+    <th>Title</th>
+    <th>Action</th>
+  </tr>
+  <% @games.each do |game| %>
+  <tr>
+    <td><%= game.title %> </td>
+    <td><%= link_to 'Show', game_path(game) %> | 
+    <%= link_to 'Edit', edit_game_path(game) %> | 
+    <%= link_to 'Delete', game_path(game),
+                method: :delete,
+                data: { confirm: 'Are you sure?' } %>
+    </td>
+  </tr>
+
+    <br>
+  <% end %>
+  </table>
+  <br><br>
+
+</div>
+

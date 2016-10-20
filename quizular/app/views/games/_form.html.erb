@@ -1,31 +1,128 @@
-<%= form_for @game do |f| %>
- 
-  <% if @game.errors.any? %>
-    <div id="error_explanation">
-      <h2>
-        <%= pluralize(@game.errors.count, "error") %> prohibited
-        this game from being saved:
-      </h2>
-      <ul>
-        <% @game.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
-    </div>
+
+
+  <%= form_for @game do |f| %>
+   
+    <% if @game.errors.any? %>
+      <div id="error_explanation">
+        <h2>
+          <%= pluralize(@game.errors.count, "error") %> prohibited
+          this game from being saved:
+        </h2>
+        <ul>
+          <% @game.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+   
+    <p>
+      <%= f.label :title %><br>
+      <%= f.text_field :title %>
+    </p>
+   
+    <p><strong>10-Point Question</strong></p>
+    <p>
+      <%= f.label :question10 %><br>
+      <%= f.text_field :question10, :size=>"120" %>
+    </p>
+
+    <p>
+      <%= f.label :answer10 %><br>
+      <%= f.text_field :answer10, :size=>"100" %>
+    </p>
+
+
+    <p><strong>20-Point Question</strong></p>
+    <p>
+      <%= f.label :question20 %><br>
+      <%= f.text_field :question20, :size=>"120" %>
+    </p>
+
+    <p>
+      <%= f.label :answer20 %><br>
+      <%= f.text_field :answer20, :size=>"100" %>
+    </p>
+
+      <p><strong>30-Point Question</strong></p>
+    <p>
+      <%= f.label :question30 %><br>
+      <%= f.text_field :question30, :size=>"120" %>
+    </p>
+
+    <p>
+      <%= f.label :answer30 %><br>
+      <%= f.text_field :answer30, :size=>"100" %>
+    </p>
+
+      <p><strong>40-Point Question</strong></p>
+    <p>
+      <%= f.label :question40 %><br>
+      <%= f.text_field :question40, :size=>"120" %>
+    </p>
+
+    <p>
+      <%= f.label :answer40 %><br>
+      <%= f.text_field :answer40, :size=>"100" %>
+    </p>
+
+      <p><strong>50-Point Question</strong></p>
+    <p>
+      <%= f.label :question50 %><br>
+      <%= f.text_field :question50, :size=>"120" %>
+    </p>
+
+    <p>
+      <%= f.label :answer50 %><br>
+      <%= f.text_field :answer50, :size=>"100" %>
+    </p>
+
+      <p><strong>60-Point Question</strong></p>
+    <p>
+      <%= f.label :question60 %><br>
+      <%= f.text_field :question60, :size=>"120" %>
+    </p>
+
+    <p>
+      <%= f.label :answer60 %><br>
+      <%= f.text_field :answer60, :size=>"100" %>
+    </p>
+
+      <p><strong>70-Point Question</strong></p>
+    <p>
+      <%= f.label :question70 %><br>
+      <%= f.text_field :question70, :size=>"120" %>
+    </p>
+
+    <p>
+      <%= f.label :answer70 %><br>
+      <%= f.text_field :answer70, :size=>"100" %>
+    </p>
+
+      <p><strong>80-Point Question</strong></p>
+    <p>
+      <%= f.label :question80 %><br>
+      <%= f.text_field :question80, :size=>"120" %>
+    </p>
+
+    <p>
+      <%= f.label :answer80 %><br>
+      <%= f.text_field :answer80, :size=>"100" %>
+    </p>
+
+      <p><strong>90-Point Question</strong></p>
+    <p>
+      <%= f.label :question90 %><br>
+      <%= f.text_field :question90, :size=>"120" %>
+    </p>
+
+    <p>
+      <%= f.label :answer90 %><br>
+      <%= f.text_field :answer90, :size=>"100" %>
+    </p>
+   
+    <p>
+      <%= f.submit class: 'submit-button' %>
+    </p>
+   
   <% end %>
- 
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
- 
-  <p>
-    <%= f.label :question10 %><br>
-    <%= f.text_field :question10 %>
-  </p>
- 
-  <p>
-    <%= f.submit %>
-  </p>
- 
-<% end %>
