@@ -1,35 +1,5 @@
-<h1>Editing Game</h1>
+<h1>Edit Game</h1>
  
-<%= form_for :game, url: game_path(@game), method: :patch do |f| %>
- 
-  <% if @game.errors.any? %>
-    <div id="error_explanation">
-      <h2>
-        <%= pluralize(@game.errors.count, "error") %> prohibited
-        this game from being saved:
-      </h2>
-      <ul>
-        <% @game.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
- 
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
- 
-  <p>
-    <%= f.label :question10 %><br>
-    <%= f.text_field :question10 %>
-  </p>
- 
-  <p>
-    <%= f.submit %>
-  </p>
- 
-<% end %>
+<%= render 'form' %>
  
 <%= link_to 'Back', games_path %>
