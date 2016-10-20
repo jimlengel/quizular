@@ -43,10 +43,9 @@ class GamesController < ApplicationController
     redirect_to games_path
   end
 
-
   private
     def game_params
-      params.require(:game).permit(:title, :question10)
+      params.require(:game).permit(:title, :question10, :question20, :question30, :question40, :question50, :question60, :question70, :question80, :question90, :answer10, :answer20, :answer30, :answer40, :answer50, :answer60, :answer70, :answer80, :answer90)
     end
 
 end
