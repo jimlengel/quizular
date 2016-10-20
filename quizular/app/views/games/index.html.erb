@@ -1,0 +1,7 @@
+<% @games.each do |game| %>
+  <%= game.title %>
+
+<% end %>
+
+<%= link_to 'Games', controller: 'games' %>
+<%= link_to 'New Game', new_game_path %>
