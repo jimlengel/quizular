@@ -14,3 +14,14 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+<!--
+function sayHello() {
+   document.getElementById("aa").innerHTML = "test 123";
+}
+
+function myFunction() {
+    var popup = document.getElementById('myPopup');
+    popup.classList.toggle('show');
+}
+//-->
