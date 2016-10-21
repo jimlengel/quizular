@@ -10,10 +10,12 @@
 </div> -->
 
 <div class="gameboard">
-  <div class="gameblock popup" id="aa" onclick="myFunction()">10
-  <span class="popuptext" id="myPopup"><%= @game.question10 %></span>
+  <div class="gameblock popup" id="aa" onclick="popUpQuestion10()">10
+  <span class="popuptext" id="myPopup10"><%= @game.question10 %></span>
   </div>
-  <div class="gameblock" id="bb">20</div>
+  <div class="gameblock popup" id="bb" onclick="popUpQuestion20()">20
+  <span class="popuptext" id="myPopup20"><%= @game.question20 %></span>
+  </div>
   <div class="gameblock" id="cc">30</div>
   <div class="gameblock" id="dd">40</div>
   <div class="gameblock" id="ee">50</div>

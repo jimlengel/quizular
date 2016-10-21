@@ -16,12 +16,13 @@
 //= require_tree .
 
 <!--
-function sayHello() {
-   document.getElementById("aa").innerHTML = "test 123";
-}
 
-function myFunction() {
-    var popup = document.getElementById('myPopup');
+function popUpQuestion10() {
+    var popup = document.getElementById('myPopup10');
+    popup.classList.toggle('show');
+}
+function popUpQuestion20() {
+    var popup = document.getElementById('myPopup20');
     popup.classList.toggle('show');
 }
 //-->
