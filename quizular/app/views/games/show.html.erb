@@ -1,69 +1,27 @@
-<div class="game-header">
-  <div class="game-title">Game</div>
-    <div class="game-links">
-    <%= link_to 'Edit', edit_game_path(@game) %> &bull; 
-    <%= link_to 'Back', games_path %>
-    </div>
+<div class="header">
+  <div class="title">Quizular</div>
+</div>
+<div class="spacer">
+</div>
+<div class="gameboard">
+  <div class="gameblock" id="a">10</div>
+  <div class="gameblock" id="b">20</div>
+  <div class="gameblock" id="c">30</div>
+  <div class="gameblock" id="d">40</div>
+  <div class="gameblock" id="e">50</div>
+  <div class="gameblock" id="f">60</div>
+  <div class="gameblock" id="g">70</div>
+  <div class="gameblock" id="h">80</div>
+  <div class="gameblock" id="i">90</div>
 </div>
 
-<div class="form">
-  <p>
-    <strong>Title:</strong>
-    <%= @game.title %>
-  </p>
-   
-  <p>
-    <strong>Question 10</strong><br>
-    Q <%= @game.question10 %><br>
-    A <%= @game.answer10 %>
-  </p>
 
-  <p>
-    <strong>Question 20</strong><br>
-    Q <%= @game.question20 %><br>
-    A <%= @game.answer20 %>
-  </p>
 
-  <p>
-    <strong>Question 30</strong><br>
-    Q <%= @game.question30 %><br>
-    A <%= @game.answer30 %>
-  </p>
+<div class="teams">
+  <div class="home"><%= link_to 'Back', games_path %></div>
 
-  <p>
-    <strong>Question 40</strong><br>
-    Q <%= @game.question40 %><br>
-    A <%= @game.answer40 %>
-  </p>
+  <div class="team" id="blue">20</div>
+  <div class="team" id="red">10</div>
+  <div class="team" id="yellow">30</div>
 
-  <p>
-    <strong>Question 50</strong><br>
-    Q <%= @game.question50 %><br>
-    A <%= @game.answer60 %>
-  </p>
-
-  <p>
-    <strong>Question 60</strong><br>
-    Q <%= @game.question60 %><br>
-    A <%= @game.answer60 %>
-  </p>
-
-  <p>
-    <strong>Question 70</strong><br>
-    Q <%= @game.question70 %><br>
-    A <%= @game.answer70 %>
-  </p>
-
-  <p>
-    <strong>Question 80</strong><br>
-    Q <%= @game.question80 %><br>
-    A <%= @game.answer80 %>
-  </p>
-
-  <p>
-    <strong>Question 90</strong><br>
-    Q <%= @game.question90 %><br>
-    A <%= @game.answer90 %>
-  </p>
 </div>
-
